@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Manifeste du radialisme</title>
+  <title>Manifeste Radialiste</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;700&family=Fredoka:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
@@ -15,7 +15,7 @@
 
     body {
       font-family: 'Roboto', sans-serif;
-      background: radial-gradient(circle at top, #0f172a, #1e40af, #4c1d95); /* Vibrant radial gradient */
+      background: radial-gradient(circle at top, #0f172a, #1e40af, #4c1d95);
       color: #e5e7eb;
       min-height: 100vh;
       display: flex;
@@ -25,55 +25,13 @@
 
     header {
       position: relative;
-      background: url('images/blue_bird.jpg') center/cover no-repeat;
+      background: url('https://via.placeholder.com/1200x400/2a9d8f/ffffff?text=Radial+Municipalisme+%2B+Décroissance') center/cover no-repeat;
       height: 60vh;
       min-height: 300px;
       display: flex;
       align-items: flex-end;
       justify-content: center;
       z-index: 1;
-    }
-
-    .dbz-burst {
-      position: absolute;
-      top: -30px;
-      left: -30px;
-      width: 200px;
-      height: 200px;
-      background: url('https://i.imgur.com/kJ7M7Wo.png') center/contain no-repeat;
-      animation: burst 1.2s infinite alternate;
-    }
-
-    @keyframes burst {
-      from { transform: scale(1); }
-      to { transform: scale(1.1); }
-    }
-
-    .hero {
-      background: rgba(0, 0, 0, 0.6);
-      padding: 20px 30px;
-      border-radius: 8px;
-      text-align: center;
-      max-width: 650px;
-      width: 90%;
-      margin-bottom: 20px;
-      animation: fadeInUp 1s ease-out;
-    }
-
-    .hero h1 {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 2.8em;
-      color: #ffd700; /* Gold for vibrancy */
-      text-shadow: 0 0 10px #ff4500; /* Orange glow */
-      margin-bottom: 12px;
-      text-transform: uppercase;
-    }
-
-    .hero p {
-      font-family: 'Fredoka', sans-serif;
-      font-size: 1.1em;
-      color: #adff2f; /* Lime green for youthfulness */
-      margin-top: 8px;
     }
 
     .speech-bubble {
@@ -103,6 +61,33 @@
       border-style: solid;
       border-color: #f4a261 transparent;
       filter: drop-shadow(0 2px 2px #e63946);
+    }
+
+    .hero {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px 30px;
+      border-radius: 8px;
+      text-align: center;
+      max-width: 650px;
+      width: 90%;
+      margin-bottom: 20px;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    .hero h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.8em;
+      color: #ffd700;
+      text-shadow: 0 0 10px #ff4500;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+
+    .hero p {
+      font-family: 'Fredoka', sans-serif;
+      font-size: 1.1em;
+      color: #adff2f;
+      margin-top: 8px;
     }
 
     .wave-divider {
@@ -491,6 +476,12 @@
       100% { transform: scale(1) rotate(-2deg); }
     }
 
+    @keyframes pulseCover {
+      0% { box-shadow: 0 0 30px rgba(34, 211, 238, 0.6), 0 0 50px rgba(46, 157, 143, 0.4); }
+      50% { box-shadow: 0 0 40px rgba(34, 211, 238, 0.8), 0 0 60px rgba(46, 157, 143, 0.6); }
+      100% { box-shadow: 0 0 30px rgba(34, 211, 238, 0.6), 0 0 50px rgba(46, 157, 143, 0.4); }
+    }
+
     @media (max-width: 900px) {
       .quiz-section { flex-direction: column; }
       .leaderboard { margin-top: 20px; }
@@ -514,7 +505,6 @@
 </head>
 <body>
   <header>
-    <div class="dbz-burst"></div>
     <div class="speech-bubble">Une révolution décentralisée !</div>
     <div class="hero">
       <h1>Manifeste Radialiste</h1>
