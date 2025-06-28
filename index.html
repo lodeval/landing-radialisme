@@ -15,7 +15,7 @@
 
     body {
       font-family: 'Roboto', sans-serif;
-      background: radial-gradient(circle at top, #1e3a8a, #00f7ff, #ff69b4);
+      background: radial-gradient(circle at top, #0a2463, #00e5ff);
       color: #e5e7eb;
       min-height: 100vh;
       display: flex;
@@ -25,7 +25,7 @@
 
     header {
       position: relative;
-      background: url('https://via.placeholder.com/1200x400/32cd32/ffffff?text=Radial+Municipalisme+%2B+Décroissance') center/cover no-repeat;
+      background: url('https://via.placeholder.com/1200x400/00cc66/ffffff?text=Radial+Municipalisme+%2B+Décroissance') center/cover no-repeat;
       height: 40vh;
       min-height: 200px;
       display: flex;
@@ -38,7 +38,7 @@
       position: absolute;
       top: 12px;
       left: 12px;
-      background: linear-gradient(45deg, #ffd60a, #00f7ff);
+      background: linear-gradient(45deg, #ff3b3b, #00cc66);
       color: #1e1e1e;
       padding: 10px 20px;
       border-radius: 12px;
@@ -48,7 +48,7 @@
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
       transform: rotate(-2deg);
       z-index: 2;
-      border: 2px solid #ff6b6b;
+      border: 2px solid #ff3b3b;
       animation: pulse 2s infinite;
     }
 
@@ -59,8 +59,8 @@
       left: 20px;
       border-width: 12px 12px 0;
       border-style: solid;
-      border-color: #ffd60a transparent;
-      filter: drop-shadow(0 2px 2px #ff6b6b);
+      border-color: #ff3b3b transparent;
+      filter: drop-shadow(0 2px 2px #00cc66);
     }
 
     .hero {
@@ -70,7 +70,7 @@
       text-align: center;
       max-width: 600px;
       width: 90%;
-      margin-bottom: 60px;
+      margin-bottom: 10px;
       animation: fadeInUp 1s ease-out;
     }
 
@@ -78,7 +78,7 @@
       font-family: 'Orbitron', sans-serif;
       font-size: 2.5em;
       color: #ffd700;
-      text-shadow: 0 0 8px #ff6b6b;
+      text-shadow: 0 0 8px #ff3b3b;
       margin-bottom: 10px;
       text-transform: uppercase;
     }
@@ -92,18 +92,18 @@
 
     .wave-divider {
       position: relative;
-      height: 30px;
-      background: linear-gradient(45deg, #ff6b6b, #ffd60a, #00f7ff, #32cd32);
+      height: 20px;
+      background: linear-gradient(45deg, #ff3b3b, #00cc66);
       overflow: hidden;
     }
 
     .wave-divider::before {
       content: '';
       position: absolute;
-      top: -15px;
+      top: -10px;
       left: 0;
       width: 100%;
-      height: 45px;
+      height: 30px;
       background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113.64,28.06,1200,39.48V0Z" fill="%23ffffff" opacity="0.9"></path></svg>') repeat-x;
       animation: wave 8s linear infinite;
     }
@@ -128,26 +128,26 @@
       width: 95%;
       border-radius: 15px;
       margin-bottom: 8px;
-      border: 3px solid #00f7ff;
-      box-shadow: 0 0 25px rgba(0, 247, 255, 0.6), 0 0 40px rgba(50, 205, 50, 0.4);
+      border: 3px solid #00e5ff;
+      box-shadow: 0 0 25px rgba(0, 229, 255, 0.6), 0 0 40px rgba(0, 204, 102, 0.4);
       animation: pulseCover 2.5s infinite;
     }
 
     .blue-bird:hover {
       transform: scale(1.05);
-      box-shadow: 0 0 35px rgba(0, 247, 255, 0.8), 0 0 50px rgba(50, 205, 50, 0.6);
+      box-shadow: 0 0 35px rgba(0, 229, 255, 0.8), 0 0 50px rgba(0, 204, 102, 0.6);
     }
 
     @keyframes pulseCover {
-      0% { box-shadow: 0 0 25px rgba(0, 247, 255, 0.6), 0 0 40px rgba(50, 205, 50, 0.4); }
-      50% { box-shadow: 0 0 35px rgba(0, 247, 255, 0.8), 0 0 50px rgba(50, 205, 50, 0.6); }
-      100% { box-shadow: 0 0 25px rgba(0, 247, 255, 0.6), 0 0 40px rgba(50, 205, 50, 0.4); }
+      0% { box-shadow: 0 0 25px rgba(0, 229, 255, 0.6), 0 0 40px rgba(0, 204, 102, 0.4); }
+      50% { box-shadow: 0 0 35px rgba(0, 229, 255, 0.8), 0 0 50px rgba(0, 204, 102, 0.6); }
+      100% { box-shadow: 0 0 25px rgba(0, 229, 255, 0.6), 0 0 40px rgba(0, 204, 102, 0.4); }
     }
 
     .cover-legend {
       font-family: 'Fredoka', sans-serif;
       font-size: 1em;
-      color: #ff69b4;
+      color: #00e5ff;
       text-align: center;
       max-width: 400px;
     }
@@ -159,13 +159,13 @@
       max-width: 900px;
       padding: 20px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-      border: 2px solid #32cd32;
+      border: 2px solid #00cc66;
       animation: fadeInUp 1.4s ease-out;
     }
 
     .organization h3 {
       font-family: 'Orbitron', sans-serif;
-      color: #00f7ff;
+      color: #00e5ff;
       font-size: 1.3em;
       margin-bottom: 12px;
       letter-spacing: 1px;
@@ -180,7 +180,7 @@
     }
 
     .org-point {
-      background: linear-gradient(45deg, #32cd32, #00f7ff);
+      background: linear-gradient(45deg, #00cc66, #00e5ff);
       color: #fff;
       border-radius: 10px;
       padding: 15px;
@@ -188,13 +188,13 @@
       max-width: 200px;
       text-align: center;
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-      border: 1.5px solid #ff6b6b;
+      border: 1.5px solid #ff3b3b;
       transition: transform 0.3s, box-shadow 0.3s;
     }
 
     .org-point:hover {
       transform: translateY(-5px) scale(1.03);
-      box-shadow: 0 0 15px rgba(255, 107, 107, 0.4);
+      box-shadow: 0 0 15px rgba(255, 59, 59, 0.4);
     }
 
     .org-point i {
@@ -225,19 +225,19 @@
     }
 
     .point {
-      background: linear-gradient(45deg, #ff6b6b, #ffd60a);
+      background: linear-gradient(45deg, #ff3b3b, #ffeb3b);
       color: #fff;
       padding: 18px;
       border-radius: 10px;
       text-align: center;
-      border: 1.5px solid #32cd32;
+      border: 1.5px solid #00cc66;
       transition: transform 0.3s, box-shadow 0.3s;
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
     }
 
     .point:hover {
       transform: translateY(-5px);
-      box-shadow: 0 0 15px rgba(50, 205, 50, 0.5);
+      box-shadow: 0 0 15px rgba(0, 204, 102, 0.5);
     }
 
     .point i {
@@ -261,16 +261,16 @@
     .funds-statement {
       font-family: 'Fredoka', sans-serif;
       font-size: 1.1em;
-      color: #ffd60a;
+      color: #ffeb3b;
       margin-bottom: 15px;
       background: rgba(0, 0, 0, 0.5);
       padding: 8px 15px;
       border-radius: 8px;
-      box-shadow: 0 0 12px rgba(255, 107, 107, 0.4);
+      box-shadow: 0 0 12px rgba(255, 59, 59, 0.4);
     }
 
     .btn, .btn-secondary, .btn-forum {
-      background: linear-gradient(45deg, #ff6b6b, #ffd60a);
+      background: linear-gradient(45deg, #ff3b3b, #ffeb3b);
       color: #fff;
       padding: 12px 30px;
       text-decoration: none;
@@ -280,25 +280,25 @@
       border-radius: 40px;
       display: inline-block;
       margin: 6px;
-      border: 2px solid #00f7ff;
-      box-shadow: 0 0 8px rgba(0, 247, 255, 0.5);
+      border: 2px solid #00e5ff;
+      box-shadow: 0 0 8px rgba(0, 229, 255, 0.5);
       transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
     }
 
     .btn:hover, .btn-secondary:hover, .btn-forum:hover {
       transform: translateY(-3px) scale(1.03);
-      box-shadow: 0 0 18px rgba(0, 247, 255, 0.8);
-      background: linear-gradient(45deg, #ffd60a, #ff6b6b);
+      box-shadow: 0 0 18px rgba(0, 229, 255, 0.8);
+      background: linear-gradient(45deg, #ffeb3b, #ff3b3b);
     }
 
     .btn-secondary {
-      background: linear-gradient(45deg, #1e3a8a, #32cd32);
-      border: 2px solid #ffd60a;
+      background: linear-gradient(45deg, #0a2463, #00cc66);
+      border: 2px solid #ffeb3b;
     }
 
     .btn-forum {
-      background: linear-gradient(45deg, #ff69b4, #00f7ff);
-      border: 2px solid #ffd60a;
+      background: linear-gradient(45deg, #ff3b3b, #00cc66);
+      border: 2px solid #ffeb3b;
     }
 
     .quiz-section {
@@ -315,13 +315,13 @@
       background: rgba(255, 255, 255, 0.1);
       border-radius: 12px;
       padding: 15px;
-      border: 2px solid #00f7ff;
+      border: 2px solid #00e5ff;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
 
     .quiz-content h3 {
       font-family: 'Orbitron', sans-serif;
-      color: #00f7ff;
+      color: #00e5ff;
       font-size: 1.3em;
       margin-bottom: 12px;
       text-transform: uppercase;
@@ -341,7 +341,7 @@
 
     .quiz-options label {
       display: block;
-      background: linear-gradient(45deg, #ff6b6b, #ffd60a);
+      background: linear-gradient(45deg, #ff3b3b, #ffeb3b);
       padding: 8px;
       margin: 4px 0;
       border-radius: 6px;
@@ -351,11 +351,11 @@
 
     .quiz-options label:hover {
       transform: scale(1.02);
-      box-shadow: 0 0 8px rgba(0, 247, 255, 0.5);
+      box-shadow: 0 0 8px rgba(0, 229, 255, 0.5);
     }
 
     .quiz-submit {
-      background: linear-gradient(45deg, #32cd32, #00f7ff);
+      background: linear-gradient(45deg, #00cc66, #00e5ff);
       color: #fff;
       padding: 10px 20px;
       border: none;
@@ -368,7 +368,7 @@
 
     .quiz-submit:hover {
       transform: scale(1.05);
-      box-shadow: 0 0 12px rgba(0, 247, 255, 0.8);
+      box-shadow: 0 0 12px rgba(0, 229, 255, 0.8);
     }
 
     .leaderboard {
@@ -376,13 +376,13 @@
       background: rgba(0, 0, 0, 0.5);
       border-radius: 12px;
       padding: 15px;
-      border: 2px solid #ffd60a;
+      border: 2px solid #ffeb3b;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
 
     .leaderboard h3 {
       font-family: 'Orbitron', sans-serif;
-      color: #ffd60a;
+      color: #ffeb3b;
       font-size: 1.1em;
       margin-bottom: 12px;
       text-transform: uppercase;
@@ -427,7 +427,7 @@
       background: rgba(255, 255, 255, 0.1);
       border-radius: 8px;
       padding: 12px 15px;
-      color: #00f7ff;
+      color: #00e5ff;
       font-style: italic;
       max-width: 300px;
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
@@ -449,17 +449,17 @@
     }
 
     .social-links a:hover {
-      color: #ffd60a;
+      color: #ffeb3b;
       transform: scale(1.15);
     }
 
     footer {
       margin-top: auto;
       font-size: 0.95em;
-      color: #ff69b4;
+      color: #00e5ff;
       padding: 15px;
       background: rgba(0, 0, 0, 0.5);
-      border-top: 3px solid #00f7ff;
+      border-top: 3px solid #00cc66;
       text-align: center;
       width: 100%;
     }
@@ -477,9 +477,9 @@
     }
 
     @keyframes pulseCover {
-      0% { box-shadow: 0 0 25px rgba(0, 247, 255, 0.6), 0 0 40px rgba(50, 205, 50, 0.4); }
-      50% { box-shadow: 0 0 35px rgba(0, 247, 255, 0.8), 0 0 50px rgba(50, 205, 50, 0.6); }
-      100% { box-shadow: 0 0 25px rgba(0, 247, 255, 0.6), 0 0 40px rgba(50, 205, 50, 0.4); }
+      0% { box-shadow: 0 0 25px rgba(0, 229, 255, 0.6), 0 0 40px rgba(0, 204, 102, 0.4); }
+      50% { box-shadow: 0 0 35px rgba(0, 229, 255, 0.8), 0 0 50px rgba(0, 204, 102, 0.6); }
+      100% { box-shadow: 0 0 25px rgba(0, 229, 255, 0.6), 0 0 40px rgba(0, 204, 102, 0.4); }
     }
 
     @media (max-width: 900px) {
@@ -584,7 +584,7 @@
   <section class="quiz-section">
     <div class="quiz-content">
       <h3>Êtes-vous radialiste ?</h3>
-      <p style="font-family: 'Fredoka', sans-serif; margin-bottom: 15px;">Testez vous avec notre quiz interactif ! Découvrez si vous partagez notre vision de municipalisme libertaire et de décroissance.</p>
+      <p style="font-family: 'Fredoka', sans-serif; margin-bottom: 15px;">Testez vos convictions avec notre quiz interactif ! Découvrez si vous partagez notre vision de municipalisme libertaire et de décroissance.</p>
       <div class="quiz-question">
         <p>Que pensez-vous de la démocratie directe ?</p>
         <div class="quiz-options">
