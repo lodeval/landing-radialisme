@@ -15,7 +15,7 @@
 
     body {
       font-family: 'Roboto', sans-serif;
-      background: linear-gradient(135deg, #0f172a, #1e40af, #4c1d95);
+      background: radial-gradient(circle at top, #0f172a, #1e40af, #4c1d95); /* Vibrant radial gradient */
       color: #e5e7eb;
       min-height: 100vh;
       display: flex;
@@ -24,69 +24,56 @@
     }
 
     header {
-      background: url('https://via.placeholder.com/1200x400/2a9d8f/ffffff?text=Radial+Municipalisme+%2B+Décroissance') center/cover;
-      min-height: 340px;
+      position: relative;
+      background: url('images/blue_bird.jpg') center/cover no-repeat;
+      height: 60vh;
+      min-height: 300px;
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-end;
-      position: relative;
+      align-items: flex-end;
+      justify-content: center;
       z-index: 1;
-      padding-bottom: 30px;
     }
 
-    .wave-divider {
-      position: relative;
-      height: 40px;
-      background: linear-gradient(45deg, #e63946, #f4a261, #22d3ee, #2a9d8f);
-      overflow: hidden;
-    }
-
-    .wave-divider::before {
-      content: '';
+    .dbz-burst {
       position: absolute;
-      top: -20px;
-      left: 0;
-      width: 100%;
-      height: 60px;
-      background:  url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113.64,28.06,1200,39.48V0Z" fill="%23ffffff" opacity="0.9"></path></svg>') repeat-x;
-      animation: wave 10s linear infinite;
+      top: -30px;
+      left: -30px;
+      width: 200px;
+      height: 200px;
+      background: url('https://i.imgur.com/kJ7M7Wo.png') center/contain no-repeat;
+      animation: burst 1.2s infinite alternate;
     }
 
-    @keyframes wave {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-1200px); }
+    @keyframes burst {
+      from { transform: scale(1); }
+      to { transform: scale(1.1); }
     }
 
-    .hero-content {
-      background: rgba(0, 0, 0, 0.7);
-      padding: 30px 40px 20px;
-      border-radius: 18px 18px 0 0;
+    .hero {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px 30px;
+      border-radius: 8px;
       text-align: center;
-      z-index: 2;
       max-width: 650px;
       width: 90%;
-      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+      margin-bottom: 20px;
       animation: fadeInUp 1s ease-out;
     }
 
-    h1 {
+    .hero h1 {
       font-family: 'Orbitron', sans-serif;
       font-size: 2.8em;
-      font-weight: 700;
-      letter-spacing: 2px;
-      color: #fff;
+      color: #ffd700; /* Gold for vibrancy */
+      text-shadow: 0 0 10px #ff4500; /* Orange glow */
       margin-bottom: 12px;
       text-transform: uppercase;
-      text-shadow: 0 0 10px rgba(230, 57, 70, 0.8);
     }
 
-    .hero-subtitle {
-      font-family: 'Fredoka', sans-serif; /* Playful font for youthfulness */
-      font-size: 1.3em;
-      color: #22d3ee;
-      margin-bottom: 10px;
-      font-weight: 500;
+    .hero p {
+      font-family: 'Fredoka', sans-serif;
+      font-size: 1.1em;
+      color: #adff2f; /* Lime green for youthfulness */
+      margin-top: 8px;
     }
 
     .speech-bubble {
@@ -118,6 +105,29 @@
       filter: drop-shadow(0 2px 2px #e63946);
     }
 
+    .wave-divider {
+      position: relative;
+      height: 40px;
+      background: linear-gradient(45deg, #e63946, #f4a261, #22d3ee, #2a9d8f);
+      overflow: hidden;
+    }
+
+    .wave-divider::before {
+      content: '';
+      position: absolute;
+      top: -20px;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113.64,28.06,1200,39.48V0Z" fill="%23ffffff" opacity="0.9"></path></svg>') repeat-x;
+      animation: wave 10s linear infinite;
+    }
+
+    @keyframes wave {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-1200px); }
+    }
+
     .cover-section {
       display: flex;
       flex-direction: column;
@@ -135,7 +145,6 @@
       margin-bottom: 10px;
       border: 4px solid #22d3ee;
       box-shadow: 0 0 30px rgba(34, 211, 238, 0.6), 0 0 50px rgba(46, 157, 143, 0.4);
-      transition: transform 0.3s, box-shadow 0.3s;
       animation: pulseCover 3s infinite;
     }
 
@@ -144,11 +153,16 @@
       box-shadow: 0 0 40px rgba(34, 211, 238, 0.8), 0 0 60px rgba(46, 157, 143, 0.6);
     }
 
+    @keyframes pulseCover {
+      0% { box-shadow: 0 0 30px rgba(34, 211, 238, 0.6), 0 0 50px rgba(46, 157, 143, 0.4); }
+      50% { box-shadow: 0 0 40px rgba(34, 211, 238, 0.8), 0 0 60px rgba(46, 157, 143, 0.6); }
+      100% { box-shadow: 0 0 30px rgba(34, 211, 238, 0.6), 0 0 50px rgba(46, 157, 143, 0.4); }
+    }
+
     .cover-legend {
       font-family: 'Fredoka', sans-serif;
       font-size: 1.1em;
       color: #a5b4fc;
-      margin-bottom: 10px;
       text-align: center;
       max-width: 420px;
     }
@@ -156,9 +170,9 @@
     .organization {
       background: rgba(255, 255, 255, 0.1);
       border-radius: 14px;
-      margin: 0 auto 28px;
+      margin: 40px auto;
       max-width: 900px;
-      padding: 26px 18px 16px;
+      padding: 26px;
       box-shadow: 0 4px 18px rgba(0, 0, 0, 0.2);
       border: 2px solid #2a9d8f;
       animation: fadeInUp 1.4s ease-out;
@@ -184,13 +198,12 @@
       background: linear-gradient(45deg, #2a9d8f, #22d3ee);
       color: #fff;
       border-radius: 12px;
-      padding: 20px 18px;
+      padding: 20px;
       min-width: 170px;
       max-width: 220px;
       text-align: center;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
       border: 1.5px solid #e63946;
-      margin-bottom: 8px;
       transition: transform 0.3s, box-shadow 0.3s;
     }
 
@@ -221,7 +234,7 @@
       grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
       gap: 22px;
       max-width: 900px;
-      margin: 38px auto 0;
+      margin: 38px auto;
       padding: 0 20px;
       animation: fadeInUp 1.6s ease-out;
     }
@@ -229,7 +242,7 @@
     .point {
       background: linear-gradient(45deg, #e63946, #f4a261);
       color: #fff;
-      padding: 22px 14px;
+      padding: 22px;
       border-radius: 12px;
       text-align: center;
       border: 1.5px solid #2a9d8f;
@@ -255,7 +268,7 @@
 
     .cta-section {
       text-align: center;
-      margin: 36px 0 16px;
+      margin: 36px 0;
       padding: 0 20px;
       animation: fadeInUp 1.8s ease-out;
     }
@@ -281,14 +294,14 @@
       font-weight: 700;
       border-radius: 50px;
       display: inline-block;
-      margin: 0 8px 12px;
+      margin: 8px;
       border: 2px solid #22d3ee;
       box-shadow: 0 0 10px rgba(34, 211, 238, 0.5);
       transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
     }
 
     .btn:hover, .btn-secondary:hover, .btn-forum:hover {
-      transform: translateY(-3px) scale(1.04);
+      transform: translateY(-3px) scale(1.03);
       box-shadow: 0 0 22px rgba(34, 211, 238, 0.8);
       background: linear-gradient(45deg, #f4a261, #e63946);
     }
@@ -408,8 +421,8 @@
     }
 
     .social-proof {
-      margin: 30px auto 0;
       max-width: 700px;
+      margin: 30px auto;
       text-align: center;
       color: #fff;
       font-size: 1.09em;
@@ -436,7 +449,7 @@
     }
 
     .social-links {
-      margin: 34px 0 0;
+      margin: 30px 0;
       display: flex;
       justify-content: center;
       gap: 22px;
@@ -456,10 +469,10 @@
     }
 
     footer {
-      margin-top: 48px;
+      margin-top: auto;
       font-size: 1em;
       color: #a5b4fc;
-      padding: 20px 0 14px;
+      padding: 20px;
       background: rgba(0, 0, 0, 0.5);
       border-top: 4px solid #22d3ee;
       text-align: center;
@@ -478,32 +491,22 @@
       100% { transform: scale(1) rotate(-2deg); }
     }
 
-    @keyframes pulseCover {
-      0% { box-shadow: 0 0 30px rgba(34, 211, 238, 0.6), 0 0 50px rgba(46, 157, 143, 0.4); }
-      50% { box-shadow: 0 0 40px rgba(34, 211, 238, 0.8), 0 0 60px rgba(46, 157, 143, 0.6); }
-      100% { box-shadow: 0 0 30px rgba(34, 211, 238, 0.6), 0 0 50px rgba(46, 157, 143, 0.4); }
-    }
-
     @media (max-width: 900px) {
-      .quiz-section {
-        flex-direction: column;
-      }
-      .leaderboard {
-        margin-top: 20px;
-      }
+      .quiz-section { flex-direction: column; }
+      .leaderboard { margin-top: 20px; }
     }
 
     @media (max-width: 700px) {
-      .hero-content { padding: 18px 7px 14px; }
-      h1 { font-size: 1.5em; }
-      .hero-subtitle { font-size: 1em; }
+      .hero { padding: 15px; }
+      .hero h1 { font-size: 2em; }
+      .hero p { font-size: 1em; }
       .speech-bubble { top: 12px; left: 8px; font-size: 0.9em; padding: 8px 14px; }
       .cover-section { margin-top: 22px; }
       .blue-bird { max-width: 98vw; max-height: 300px; }
       .organization, .manifesto-points { padding: 8px 2px; }
       .org-diagram { flex-direction: column; gap: 12px; }
       .manifesto-points { grid-template-columns: 1fr; gap: 14px; }
-      .cta-section { margin: 18px 0 8px; }
+      .cta-section { margin: 18px 0; }
       .btn, .btn-secondary, .btn-forum { font-size: 1em; padding: 12px 18px; }
       .social-links a { font-size: 1.5em; }
     }
@@ -511,11 +514,11 @@
 </head>
 <body>
   <header>
+    <div class="dbz-burst"></div>
     <div class="speech-bubble">Une révolution décentralisée !</div>
-    <div class="hero-content">
+    <div class="hero">
       <h1>Manifeste Radialiste</h1>
-      <div class="hero-subtitle">Pour un municipalisme libertaire et un communisme de la décroissance</div>
-      <p>Un monde juste, durable et décentralisé est possible ! Découvrez notre manifeste pour une société fédérée, écologique et solidaire, où l’organisation locale et la décroissance s’unissent pour un avenir vivable.</p>
+      <p>Municipalisme, décroissance & pouvoir à l’énergie du peuple</p>
     </div>
   </header>
 
@@ -523,7 +526,7 @@
 
   <section class="cover-section">
     <img src="images/blue_bird.jpg" alt="Couverture du manifeste radialiste avec un oiseau bleu symbolisant la liberté décentralisée" class="blue-bird">
-    <div class="cover-legend">L’oiseau bleu : symbole de liberté, d’organisation locale et de décroissance solidaire.</div>
+    <div class="cover-legend">L’oiseau bleu : symbole de liberté décentralisée & décroissance solidaire</div>
   </section>
 
   <section class="organization">
@@ -532,22 +535,32 @@
       <div class="org-point">
         <img src="https://via.placeholder.com/48/2a9d8f/ffffff?text=🏛️" alt="Icône d’assemblée populaire">
         <div class="org-point-title">Assemblées locales</div>
-        <div class="org-point-desc">Décisions par démocratie directe dans chaque commune.</div>
+        <div class="org-point-desc">Démocratie directe locale</div>
       </div>
       <div class="org-point">
         <img src="https://via.placeholder.com/48/f4a261/ffffff?text=🔗" alt="Icône de fédération sectorielle">
-        <div class="org-point-title">Fédérations sectorielles</div>
-        <div class="org-point-desc">Mise en réseau des initiatives pour mutualiser les ressources.</div>
+        <div class="org-point-title">9 Fédérations</div>
+        <div class="org-point-desc">Coopération sectorielle</div>
       </div>
       <div class="org-point">
-        <img src="https://via.placeholder.com/48/e63946/ffffff?text=🌱" alt="Icône d’écologie radicale">
-        <div class="org-point-title">Écologie radicale</div>
-        <div class="org-point-desc">Priorité à la décroissance et à la préservation des communs.</div>
+        <img src="https://via.placeholder.com/48/e63946/ffffff?text=🗳️" alt="Icône de conseil central">
+        <div class="org-point-title">Conseil central</div>
+        <div class="org-point-desc">Tirage au sort & révocable</div>
       </div>
       <div class="org-point">
-        <img src="https://via.placeholder.com/48/1e3a8a/ffffff?text=🤝" alt="Icône de solidarité décentralisée">
-        <div class="org-point-title">Solidarité décentralisée</div>
-        <div class="org-point-desc">Soutien mutuel et entraide entre territoires autonomes.</div>
+        <img src="https://via.placeholder.com/48/1e3a8a/ffffff?text=🔐" alt="Icône de blockchain Algorand">
+        <div class="org-point-title">Blockchain Algorand</div>
+        <div class="org-point-desc">Vote & commerce transparent</div>
+      </div>
+      <div class="org-point">
+        <img src="https://via.placeholder.com/48/22d3ee/ffffff?text=🤝" alt="Icône de coopératives locales">
+        <div class="org-point-title">Coopératives locales</div>
+        <div class="org-point-desc">Production & marchés locaux</div>
+      </div>
+      <div class="org-point">
+        <img src="https://via.placeholder.com/48/4c1d95/ffffff?text=🌿" alt="Icône de tissu associatif">
+        <div class="org-point-title">Tissu associatif</div>
+        <div class="org-point-desc">Financé par les coopératives</div>
       </div>
     </div>
   </section>
@@ -581,7 +594,7 @@
   <section class="quiz-section">
     <div class="quiz-content">
       <h3>Êtes-vous radialiste ?</h3>
-      <p style="font-family: 'Fredoka', sans-serif; margin-bottom: 20px;">Etes-vous radialiste ? Testez vos convictions avec notre quiz interactif ! Découvrez si vous partagez notre vision de municipalisme libertaire et de décroissance.</p>
+      <p style="font-family: 'Fredoka', sans-serif; margin-bottom: 20px;">Testez vos convictions avec notre quiz interactif ! Découvrez si vous partagez notre vision de municipalisme libertaire et de décroissance.</p>
       <div class="quiz-question">
         <p>Que pensez-vous de la démocratie directe ?</p>
         <div class="quiz-options">
@@ -618,7 +631,7 @@
   </div>
 
   <footer>
-    © 2025 - Mouvement Radialiste. Pour un avenir libre, décentralisé et écologique.
+    © 2025 – Mouvement Radialiste – Libre, Fédéré, Écologique
   </footer>
 </body>
 </html>
