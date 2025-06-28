@@ -26,8 +26,8 @@
     header {
       position: relative;
       background: url('https://via.placeholder.com/1200x400/00cc66/ffffff?text=Radial+Municipalisme+%2B+Décroissance') center/cover no-repeat;
-      height: 40vh;
-      min-height: 200px;
+      height: 30vh;
+      min-height: 150px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -36,16 +36,16 @@
 
     .speech-bubble {
       position: absolute;
-      top: 12px;
-      left: 12px;
+      top: 8px;
+      left: 8px;
       background: linear-gradient(45deg, #ff3b3b, #00cc66);
       color: #1e1e1e;
-      padding: 10px 20px;
-      border-radius: 12px;
+      padding: 8px 16px;
+      border-radius: 10px;
       font-family: 'Fredoka', sans-serif;
-      font-size: 0.95em;
+      font-size: 0.9em;
       font-weight: 700;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
       transform: rotate(-2deg);
       z-index: 2;
       border: 2px solid #ff3b3b;
@@ -55,9 +55,9 @@
     .speech-bubble::after {
       content: '';
       position: absolute;
-      bottom: -12px;
-      left: 20px;
-      border-width: 12px 12px 0;
+      bottom: -10px;
+      left: 16px;
+      border-width: 10px 10px 0;
       border-style: solid;
       border-color: #ff3b3b transparent;
       filter: drop-shadow(0 2px 2px #00cc66);
@@ -65,10 +65,10 @@
 
     .hero {
       background: rgba(0, 0, 0, 0.7);
-      padding: 10px 20px;
+      padding: 8px 16px;
       border-radius: 8px;
       text-align: center;
-      max-width: 600px;
+      max-width: 550px;
       width: 90%;
       margin-bottom: 10px;
       animation: fadeInUp 1s ease-out;
@@ -76,18 +76,18 @@
 
     .hero h1 {
       font-family: 'Orbitron', sans-serif;
-      font-size: 2.5em;
+      font-size: 2.2em;
       color: #ffd700;
       text-shadow: 0 0 8px #ff3b3b;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
       text-transform: uppercase;
     }
 
     .hero p {
       font-family: 'Fredoka', sans-serif;
-      font-size: 1em;
+      font-size: 0.95em;
       color: #adff2f;
-      margin-top: 6px;
+      margin-top: 5px;
     }
 
     .wave-divider {
@@ -117,7 +117,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin: 30px auto;
+      margin: 20px auto;
       max-width: 900px;
       padding: 0 15px;
       animation: fadeInUp 1.2s ease-out;
@@ -146,27 +146,78 @@
 
     .cover-legend {
       font-family: 'Fredoka', sans-serif;
-      font-size: 1em;
+      font-size: 0.95em;
       color: #00e5ff;
       text-align: center;
       max-width: 400px;
     }
 
+    .cta-section {
+      text-align: center;
+      margin: 20px auto;
+      max-width: 900px;
+      padding: 0 15px;
+      animation: fadeInUp 1.4s ease-out;
+    }
+
+    .funds-statement {
+      font-family: 'Fredoka', sans-serif;
+      font-size: 1em;
+      color: #ffeb3b;
+      margin-bottom: 12px;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 6px 12px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(255, 59, 59, 0.4);
+    }
+
+    .btn, .btn-secondary, .btn-forum {
+      background: linear-gradient(45deg, #ff3b3b, #ffeb3b);
+      color: #fff;
+      padding: 10px 25px;
+      text-decoration: none;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 0.95em;
+      font-weight: 700;
+      border-radius: 40px;
+      display: inline-block;
+      margin: 5px;
+      border: 2px solid #00e5ff;
+      box-shadow: 0 0 8px rgba(0, 229, 255, 0.5);
+      transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+    }
+
+    .btn:hover, .btn-secondary:hover, .btn-forum:hover {
+      transform: translateY(-3px) scale(1.03);
+      box-shadow: 0 0 15px rgba(0, 229, 255, 0.8);
+      background: linear-gradient(45deg, #ffeb3b, #ff3b3b);
+    }
+
+    .btn-secondary {
+      background: linear-gradient(45deg, #0a2463, #00cc66);
+      border: 2px solid #ffeb3b;
+    }
+
+    .btn-forum {
+      background: linear-gradient(45deg, #ff3b3b, #00cc66);
+      border: 2px solid #ffeb3b;
+    }
+
     .organization {
       background: rgba(255, 255, 255, 0.1);
       border-radius: 12px;
-      margin: 30px auto;
+      margin: 20px auto;
       max-width: 900px;
       padding: 20px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
       border: 2px solid #00cc66;
-      animation: fadeInUp 1.4s ease-out;
+      animation: fadeInUp 1.6s ease-out;
     }
 
     .organization h3 {
       font-family: 'Orbitron', sans-serif;
       color: #00e5ff;
-      font-size: 1.3em;
+      font-size: 1.2em;
       margin-bottom: 12px;
       letter-spacing: 1px;
       text-transform: uppercase;
@@ -219,9 +270,9 @@
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 20px;
       max-width: 900px;
-      margin: 30px auto;
+      margin: 20px auto;
       padding: 0 15px;
-      animation: fadeInUp 1.6s ease-out;
+      animation: fadeInUp 1.8s ease-out;
     }
 
     .point {
@@ -251,59 +302,9 @@
       font-weight: 500;
     }
 
-    .cta-section {
-      text-align: center;
-      margin: 30px 0;
-      padding: 0 15px;
-      animation: fadeInUp 1.8s ease-out;
-    }
-
-    .funds-statement {
-      font-family: 'Fredoka', sans-serif;
-      font-size: 1.1em;
-      color: #ffeb3b;
-      margin-bottom: 15px;
-      background: rgba(0, 0, 0, 0.5);
-      padding: 8px 15px;
-      border-radius: 8px;
-      box-shadow: 0 0 12px rgba(255, 59, 59, 0.4);
-    }
-
-    .btn, .btn-secondary, .btn-forum {
-      background: linear-gradient(45deg, #ff3b3b, #ffeb3b);
-      color: #fff;
-      padding: 12px 30px;
-      text-decoration: none;
-      font-family: 'Orbitron', sans-serif;
-      font-size: 1.05em;
-      font-weight: 700;
-      border-radius: 40px;
-      display: inline-block;
-      margin: 6px;
-      border: 2px solid #00e5ff;
-      box-shadow: 0 0 8px rgba(0, 229, 255, 0.5);
-      transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
-    }
-
-    .btn:hover, .btn-secondary:hover, .btn-forum:hover {
-      transform: translateY(-3px) scale(1.03);
-      box-shadow: 0 0 18px rgba(0, 229, 255, 0.8);
-      background: linear-gradient(45deg, #ffeb3b, #ff3b3b);
-    }
-
-    .btn-secondary {
-      background: linear-gradient(45deg, #0a2463, #00cc66);
-      border: 2px solid #ffeb3b;
-    }
-
-    .btn-forum {
-      background: linear-gradient(45deg, #ff3b3b, #00cc66);
-      border: 2px solid #ffeb3b;
-    }
-
     .quiz-section {
       max-width: 1100px;
-      margin: 30px auto;
+      margin: 20px auto;
       display: flex;
       gap: 15px;
       padding: 0 15px;
@@ -322,7 +323,7 @@
     .quiz-content h3 {
       font-family: 'Orbitron', sans-serif;
       color: #00e5ff;
-      font-size: 1.3em;
+      font-size: 1.2em;
       margin-bottom: 12px;
       text-transform: uppercase;
     }
@@ -334,7 +335,7 @@
 
     .quiz-question p {
       font-family: 'Fredoka', sans-serif;
-      font-size: 1em;
+      font-size: 0.95em;
       color: #e5e7eb;
       margin-bottom: 8px;
     }
@@ -361,7 +362,7 @@
       border: none;
       border-radius: 40px;
       font-family: 'Orbitron', sans-serif;
-      font-size: 1em;
+      font-size: 0.95em;
       cursor: pointer;
       transition: transform 0.3s, box-shadow 0.3s;
     }
@@ -395,7 +396,7 @@
 
     .leaderboard li {
       font-family: 'Fredoka', sans-serif;
-      font-size: 0.95em;
+      font-size: 0.9em;
       color: #e5e7eb;
       margin-bottom: 8px;
       display: flex;
@@ -407,10 +408,10 @@
 
     .social-proof {
       max-width: 650px;
-      margin: 25px auto;
+      margin: 20px auto;
       text-align: center;
       color: #fff;
-      font-size: 1em;
+      font-size: 0.95em;
       padding: 0 15px;
       animation: fadeInUp 2.2s ease-out;
     }
@@ -434,7 +435,7 @@
     }
 
     .social-links {
-      margin: 25px 0;
+      margin: 20px 0;
       display: flex;
       justify-content: center;
       gap: 18px;
@@ -455,7 +456,7 @@
 
     footer {
       margin-top: auto;
-      font-size: 0.95em;
+      font-size: 0.9em;
       color: #00e5ff;
       padding: 15px;
       background: rgba(0, 0, 0, 0.5);
@@ -488,17 +489,15 @@
     }
 
     @media (max-width: 700px) {
-      .hero { padding: 10px; }
-      .hero h1 { font-size: 1.8em; }
-      .hero p { font-size: 0.9em; }
-      .speech-bubble { top: 8px; left: 8px; font-size: 0.85em; padding: 6px 12px; }
-      .cover-section { margin-top: 15px; }
-      .blue-bird { max-width: 98vw; max-height: 250px; }
-      .organization, .manifesto-points { padding: 6px 2px; }
+      .hero { padding: 8px; }
+      .hero h1 { font-size: 1.6em; }
+      .hero p { font-size: 0.85em; }
+      .speech-bubble { top: 6px; left: 6px; font-size: 0.8em; padding: 6px 12px; }
+      .cover-section, .cta-section, .organization, .manifesto-points { margin: 15px auto; padding: 0 10px; }
+      .blue-bird { max-width: 98vw; max-height: 220px; }
       .org-diagram { flex-direction: column; gap: 10px; }
       .manifesto-points { grid-template-columns: 1fr; gap: 12px; }
-      .cta-section { margin: 15px 0; }
-      .btn, .btn-secondary, .btn-forum { font-size: 0.95em; padding: 10px 15px; }
+      .btn, .btn-secondary, .btn-forum { font-size: 0.9em; padding: 8px 12px; }
       .social-links a { font-size: 1.4em; }
     }
   </style>
@@ -517,6 +516,13 @@
   <section class="cover-section">
     <img src="images/blue_bird.jpg" alt="Couverture du manifeste radialiste avec un oiseau bleu symbolisant la liberté décentralisée" class="blue-bird">
     <div class="cover-legend">L’oiseau bleu : symbole de liberté décentralisée & décroissance solidaire</div>
+  </section>
+
+  <section class="cta-section">
+    <div class="funds-statement">100% des fonds collectés soutiennent des projets radialistes pour un avenir décentralisé et écologique !</div>
+    <a href="https://kdp.amazon.com" target="_blank" class="btn">Acheter sur KDP</a>
+    <a href="#" class="btn-secondary">Télécharger un extrait gratuit</a>
+    <a href="https://discourse.example.com" target="_blank" class="btn-forum">Rejoindre le forum communautaire</a>
   </section>
 
   <section class="organization">
@@ -574,17 +580,10 @@
     </div>
   </section>
 
-  <section class="cta-section">
-    <div class="funds-statement">100% des fonds collectés soutiennent des projets radialistes pour un avenir décentralisé et écologique !</div>
-    <a href="https://kdp.amazon.com" target="_blank" class="btn">Acheter sur KDP</a>
-    <a href="#" class="btn-secondary">Télécharger un extrait gratuit</a>
-    <a href="https://discourse.example.com" target="_blank" class="btn-forum">Rejoindre le forum communautaire</a>
-  </section>
-
   <section class="quiz-section">
     <div class="quiz-content">
       <h3>Êtes-vous radialiste ?</h3>
-      <p style="font-family: 'Fredoka', sans-serif; margin-bottom: 15px;">Testez vous avec notre quiz interactif ! Découvrez si vous partagez notre vision de municipalisme libertaire et de décroissance.</p>
+      <p style="font-family: 'Fredoka', sans-serif; margin-bottom: 15px;">Testez-vous avec notre quiz interactif ! Découvrez si vous partagez notre vision de municipalisme libertaire et de décroissance.</p>
       <div class="quiz-question">
         <p>Que pensez-vous de la démocratie directe ?</p>
         <div class="quiz-options">
@@ -609,7 +608,7 @@
   <section class="social-proof">
     <div>Ils en parlent :</div>
     <div class="testimonials">
-      <div class="testimonial">« Un manifeste qui propose une organisation concrète pour un futur viable. »</div>
+      <div class="testimonial">« Un manifeste inspirant qui propose une organisation concrète pour un futur viable. »</div>
       <div class="testimonial">« La synthèse entre municipalisme et décroissance : indispensable aujourd’hui. »</div>
     </div>
   </section>
