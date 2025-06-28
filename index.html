@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Manifeste Radialiste</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;700&family=Fredoka:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     * {
@@ -15,7 +15,7 @@
 
     body {
       font-family: 'Roboto', sans-serif;
-      background: linear-gradient(135deg, #0f172a, #1e40af, #4c1d95); /* Vibrant dark gradient with cyan and magenta */
+      background: linear-gradient(135deg, #0f172a, #1e40af, #4c1d95);
       color: #e5e7eb;
       min-height: 100vh;
       display: flex;
@@ -35,11 +35,10 @@
       padding-bottom: 30px;
     }
 
-    /* Animated wave separator */
     .wave-divider {
       position: relative;
       height: 40px;
-      background: linear-gradient(45deg, #e63946, #f4a261, #2a9d8f); /* Colorful gradient */
+      background: linear-gradient(45deg, #e63946, #f4a261, #22d3ee, #2a9d8f);
       overflow: hidden;
     }
 
@@ -50,7 +49,7 @@
       left: 0;
       width: 100%;
       height: 60px;
-      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113.64,28.06,1200,39.48V0Z" fill="%23ffffff" opacity="0.9"></path></svg>') repeat-x;
+      background:  url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113.64,28.06,1200,39.48V0Z" fill="%23ffffff" opacity="0.9"></path></svg>') repeat-x;
       animation: wave 10s linear infinite;
     }
 
@@ -79,12 +78,13 @@
       color: #fff;
       margin-bottom: 12px;
       text-transform: uppercase;
-      text-shadow: 0 0 10px rgba(230, 57, 70, 0.8); /* Neon red glow */
+      text-shadow: 0 0 10px rgba(230, 57, 70, 0.8);
     }
 
     .hero-subtitle {
+      font-family: 'Fredoka', sans-serif; /* Playful font for youthfulness */
       font-size: 1.3em;
-      color: #22d3ee; /* Cyan for vibrancy */
+      color: #22d3ee;
       margin-bottom: 10px;
       font-weight: 500;
     }
@@ -93,10 +93,11 @@
       position: absolute;
       top: 32px;
       left: 38px;
-      background: linear-gradient(45deg, #f4a261, #22d3ee); /* Colorful gradient */
+      background: linear-gradient(45deg, #f4a261, #22d3ee);
       color: #1e1e1e;
       padding: 13px 28px;
       border-radius: 16px;
+      font-family: 'Fredoka', sans-serif;
       font-size: 1.05em;
       font-weight: 700;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -132,8 +133,8 @@
       width: 95%;
       border-radius: 18px;
       margin-bottom: 10px;
-      border: 4px solid #22d3ee; /* Cyan border for vibrancy */
-      box-shadow: 0 0 30px rgba(34, 211, 238, 0.6), 0 0 50px rgba(46, 157, 143, 0.4); /* Double glow effect */
+      border: 4px solid #22d3ee;
+      box-shadow: 0 0 30px rgba(34, 211, 238, 0.6), 0 0 50px rgba(46, 157, 143, 0.4);
       transition: transform 0.3s, box-shadow 0.3s;
       animation: pulseCover 3s infinite;
     }
@@ -144,6 +145,7 @@
     }
 
     .cover-legend {
+      font-family: 'Fredoka', sans-serif;
       font-size: 1.1em;
       color: #a5b4fc;
       margin-bottom: 10px;
@@ -179,7 +181,7 @@
     }
 
     .org-point {
-      background: linear-gradient(45deg, #2a9d8f, #22d3ee); /* Green to cyan gradient */
+      background: linear-gradient(45deg, #2a9d8f, #22d3ee);
       color: #fff;
       border-radius: 12px;
       padding: 20px 18px;
@@ -225,7 +227,7 @@
     }
 
     .point {
-      background: linear-gradient(45deg, #e63946, #f4a261); /* Red to yellow gradient */
+      background: linear-gradient(45deg, #e63946, #f4a261);
       color: #fff;
       padding: 22px 14px;
       border-radius: 12px;
@@ -258,7 +260,18 @@
       animation: fadeInUp 1.8s ease-out;
     }
 
-    .btn, .btn-secondary {
+    .funds-statement {
+      font-family: 'Fredoka', sans-serif;
+      font-size: 1.2em;
+      color: #f4a261;
+      margin-bottom: 20px;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 10px 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(230, 57, 70, 0.4);
+    }
+
+    .btn, .btn-secondary, .btn-forum {
       background: linear-gradient(45deg, #e63946, #f4a261);
       color: #fff;
       padding: 16px 38px;
@@ -274,7 +287,7 @@
       transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
     }
 
-    .btn:hover, .btn-secondary:hover {
+    .btn:hover, .btn-secondary:hover, .btn-forum:hover {
       transform: translateY(-3px) scale(1.04);
       box-shadow: 0 0 22px rgba(34, 211, 238, 0.8);
       background: linear-gradient(45deg, #f4a261, #e63946);
@@ -285,6 +298,115 @@
       border: 2px solid #f4a261;
     }
 
+    .btn-forum {
+      background: linear-gradient(45deg, #4c1d95, #22d3ee);
+      border: 2px solid #f4a261;
+    }
+
+    .quiz-section {
+      max-width: 1200px;
+      margin: 40px auto;
+      display: flex;
+      gap: 20px;
+      padding: 0 20px;
+      animation: fadeInUp 2s ease-out;
+    }
+
+    .quiz-content {
+      flex: 3;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 14px;
+      padding: 20px;
+      border: 2px solid #22d3ee;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    .quiz-content h3 {
+      font-family: 'Orbitron', sans-serif;
+      color: #22d3ee;
+      font-size: 1.4em;
+      margin-bottom: 14px;
+      text-transform: uppercase;
+    }
+
+    .quiz-question {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .quiz-question p {
+      font-family: 'Fredoka', sans-serif;
+      font-size: 1.1em;
+      color: #e5e7eb;
+      margin-bottom: 10px;
+    }
+
+    .quiz-options label {
+      display: block;
+      background: linear-gradient(45deg, #e63946, #f4a261);
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .quiz-options label:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 10px rgba(34, 211, 238, 0.5);
+    }
+
+    .quiz-submit {
+      background: linear-gradient(45deg, #2a9d8f, #22d3ee);
+      color: #fff;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 50px;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .quiz-submit:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(34, 211, 238, 0.8);
+    }
+
+    .leaderboard {
+      flex: 1;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 14px;
+      padding: 20px;
+      border: 2px solid #f4a261;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    .leaderboard h3 {
+      font-family: 'Orbitron', sans-serif;
+      color: #f4a261;
+      font-size: 1.2em;
+      margin-bottom: 14px;
+      text-transform: uppercase;
+    }
+
+    .leaderboard ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .leaderboard li {
+      font-family: 'Fredoka', sans-serif;
+      font-size: 1em;
+      color: #e5e7eb;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 8px;
+      border-radius: 8px;
+    }
+
     .social-proof {
       margin: 30px auto 0;
       max-width: 700px;
@@ -292,7 +414,7 @@
       color: #fff;
       font-size: 1.09em;
       padding: 0 20px;
-      animation: fadeInUp 2s ease-out;
+      animation: fadeInUp 2.2s ease-out;
     }
 
     .testimonials {
@@ -319,7 +441,7 @@
       justify-content: center;
       gap: 22px;
       padding: 0 20px;
-      animation: fadeInUp 2.2s ease-out;
+      animation: fadeInUp 2.4s ease-out;
     }
 
     .social-links a {
@@ -329,7 +451,7 @@
     }
 
     .social-links a:hover {
-      color: #f4a261; /* Yellow on hover for vibrancy */
+      color: #f4a261;
       transform: scale(1.18);
     }
 
@@ -339,7 +461,7 @@
       color: #a5b4fc;
       padding: 20px 0 14px;
       background: rgba(0, 0, 0, 0.5);
-      border-top: 4px solid #22d3ee; /* Cyan border */
+      border-top: 4px solid #22d3ee;
       text-align: center;
       width: 100%;
     }
@@ -362,6 +484,15 @@
       100% { box-shadow: 0 0 30px rgba(34, 211, 238, 0.6), 0 0 50px rgba(46, 157, 143, 0.4); }
     }
 
+    @media (max-width: 900px) {
+      .quiz-section {
+        flex-direction: column;
+      }
+      .leaderboard {
+        margin-top: 20px;
+      }
+    }
+
     @media (max-width: 700px) {
       .hero-content { padding: 18px 7px 14px; }
       h1 { font-size: 1.5em; }
@@ -373,7 +504,7 @@
       .org-diagram { flex-direction: column; gap: 12px; }
       .manifesto-points { grid-template-columns: 1fr; gap: 14px; }
       .cta-section { margin: 18px 0 8px; }
-      .btn, .btn-secondary { font-size: 1em; padding: 12px 18px; }
+      .btn, .btn-secondary, .btn-forum { font-size: 1em; padding: 12px 18px; }
       .social-links a { font-size: 1.5em; }
     }
   </style>
@@ -401,7 +532,7 @@
       <div class="org-point">
         <img src="https://via.placeholder.com/48/2a9d8f/ffffff?text=🏛️" alt="Icône d’assemblée populaire">
         <div class="org-point-title">Assemblées locales</div>
-        <div class="org-point-desc">Décisions par démocratie directe dans chaque marché communautaire.</div>
+        <div class="org-point-desc">Décisions par démocratie directe dans chaque commune.</div>
       </div>
       <div class="org-point">
         <img src="https://via.placeholder.com/48/f4a261/ffffff?text=🔗" alt="Icône de fédération sectorielle">
@@ -440,10 +571,37 @@
     </div>
   </section>
 
-  <div class="cta-section">
+  <section class="cta-section">
+    <div class="funds-statement">100% des fonds collectés soutiennent des projets radialistes pour un avenir décentralisé et écologique !</div>
     <a href="https://kdp.amazon.com" target="_blank" class="btn">Acheter sur KDP</a>
     <a href="#" class="btn-secondary">Télécharger un extrait gratuit</a>
-  </div>
+    <a href="https://discourse.example.com" target="_blank" class="btn-forum">Rejoindre le forum communautaire</a>
+  </section>
+
+  <section class="quiz-section">
+    <div class="quiz-content">
+      <h3>Êtes-vous radialiste ?</h3>
+      <p style="font-family: 'Fredoka', sans-serif; margin-bottom: 20px;">Testez vos convictions avec notre quiz interactif ! Découvrez si vous partagez notre vision de municipalisme libertaire et de décroissance.</p>
+      <div class="quiz-question">
+        <p>Que pensez-vous de la démocratie directe ?</p>
+        <div class="quiz-options">
+          <label><input type="radio" name="q1" disabled> C’est essentiel pour une société juste</label>
+          <label><input type="radio" name="q1" disabled> C’est intéressant mais compliqué</label>
+          <label><input type="radio" name="q1" disabled> Je préfère les systèmes représentatifs</label>
+        </div>
+      </div>
+      <button class="quiz-submit">Soumettre (bientôt disponible !)</button>
+    </div>
+    <div class="leaderboard">
+      <h3>Classement des Radialistes</h3>
+      <ul>
+        <li><span>EcoLibre</span><span>95%</span></li>
+        <li><span>Decroissant_21</span><span>88%</span></li>
+        <li><span>CommuneRad</span><span>82%</span></li>
+        <li><span>ViveLeBloc</span><span>79%</span></li>
+      </ul>
+    </div>
+  </section>
 
   <section class="social-proof">
     <div>Ils en parlent :</div>
